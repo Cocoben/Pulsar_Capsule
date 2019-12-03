@@ -1,0 +1,191 @@
+@import 'libs/reset.scss';
+@import 'libs/responsive.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+// Couleur
+
+$bleu1: #ACDBE2;
+$bleu2: #BCD8E0;
+$orange1:#EB8D13;
+$orange2:#D3944A;
+$rose1:#CA154F;
+$rose2:#AB3A52;
+
+//Texte
+
+%font {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  @extend %font;
+  text-decoration: none;
+}
+
+p {
+  @extend %font;
+  font-size: 14px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  @extend %font;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: none;
+}
+
+h2 {
+  @extend %font;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding: 42px 0 36px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 3px;
+    border-radius: 6px;
+    bottom: 40px;
+    left: calc(50% - 21px);
+  }
+}
+
+h3 {
+  @extend %font;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.h4 {
+  @extend %font;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+    padding: 90px 0 150px;
+
+    &:before {
+      width: 115px;
+      height: 5px;
+      bottom: 125px;
+      border-radius: 10px;
+      left: calc(50% - 57.5px);
+    }
+  }
+
+  h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+}
+
+
+
+// Bouton
+
+.btn {
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px 35px;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #FFF;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .btn {
+    padding: 15px 35px;
+    font-size: 18px;
+  }
+}
+
+
+%scale {
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+%btnCenter {
+  margin: auto;
+}
+
+// Section
+
+section {
+  margin: 0 auto 4% auto !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Body
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
+  text-align: center;
+
+  div{
+    display: flex;
+    justify-content: center;
+    a{
+      font-size: 4rem;
+      margin: 2%;
+      color: $bleu1;
+    }
+  }
+
+  p{
+    margin-bottom: 2%;
+  }
+}
+
