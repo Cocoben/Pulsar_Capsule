@@ -11,10 +11,13 @@
 <main id="accueilPage" class="container">
 
         <section id="home" class="col-8" >
-            <div>
-                <!-- Forme chelou avec video -->
+            <div class="bloup">
+
+                <img  id="imgAccueil" src="asset/img/bg/danseuse.jpg" alt=""> <i class="fas fa-play-circle"></i>
+        
             </div>
-            <h1 id="textSignature">Comprendre et se libérer</h1>
+            <h1 id="textSignature">Comprendre <span></span>et se <span></span>libérer</h1>
+            
         </section>
 
 
@@ -33,7 +36,7 @@
                 <h2>Interviews & articles</h2>
                 <p>La rédac’ déniche chaque semaine des pépites : artistes qui partagent avec vous leur passion, jeunes qui parlent de leur rapport à l’art, récap’ d’expos hors du commun... </p>
                 <p>Vous n’avez jamais été aussi proche de l’art !</p>
-                <a href="http://google.fr" class='btn'>Voir notre contenu</a>
+                <a href="articlesInterviews.php" class='btn'>Voir notre contenu</a>
             </div>
         </section>
         <section id="communaute" class="col-8">
@@ -68,7 +71,7 @@
                     <a href="https://www.instagram.com/cimaise.art/" target="_blank" class="reseauxSociaux"><img src="asset/img/reseauxSociaux/instagram-R.svg" alt="logo instagram"></a>
                     <a href="https://www.facebook.com/Cimaise-102230491260265/" target="_blank" class="reseauxSociaux"><img src="asset/img/reseauxSociaux/facebook-R.svg" alt="logo facebook"></a>
                 </div>
-                <iframe allowfullscreen id="wallsio-iframe" src="https://walls.io/s6khe?nobackground=1&amp;theme=grid&amp;show_header=0&amp;rows=2" style="border:0;height:600px;width:100%" title="Capsule"></iframe>
+                <iframe allowfullscreen id="wallsio-iframe" src="https://walls.io/s6khe?nobackground=1&amp;theme=grid&amp;show_header=0&amp;lang=fr_FR&amp;rows=2&amp;columns=3" style="border:0;height:600px;width:100%" title="Capsule"></iframe>
                 
             </div>
         </section>
@@ -84,8 +87,25 @@
         </div>
     </div>
 </main>
+
+<div id="bandeauCookie">
+    <div>
+        <div>
+            <p>Cookie Time 🍪</p>
+            <p>Nous utilisons des cookies </p>
+        </div>
+        <div>
+            <a href="">En savoir plus</a>
+            <a href="" class="btn">Ok</a>
+        </div>
+    </div>
+</div>
+
+
+
+
 <?php include('asset/inc/footer.inc.php'); ?>
-<script src="asset/js/scriptRR.js"></script>
+<script type="text/javascript" src="asset/js/scriptHome.js" ></script>
 </body>
 
 </html>

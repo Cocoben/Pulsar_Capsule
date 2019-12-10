@@ -37,9 +37,9 @@
       <div class="container">
         <ul>
           <p>Menu</p>
-          <li><a href="home.php">Accueil</a></li>
+          <li><a href="index.php">Accueil</a></li>
           <li><a href="articlesInterviews.php">Articles & interviews</a></li>
-          <li><a href="capsule.php">Capsule. C'est quoi ?</a></li>
+          <li><a href="capsule.php">Capsule, C'est quoi ?</a></li>
           <li><a href="unMot.php">Un mot aux enseignants</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>

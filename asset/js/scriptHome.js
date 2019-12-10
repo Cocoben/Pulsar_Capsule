@@ -45,33 +45,38 @@ const progressBar = document.querySelector(".fill");
 // this function increase or decrease the percentage of the element to stretch
 function stretch() {
   const pixelScrolled = window.scrollY;
-  console.log(pixelScrolled)
   const viewportHeight = window.innerHeight;
-  console.log(viewportHeight)
   const totalHeightScrollable = main.scrollHeight;
-  console.log(totalHeightScrollable)
   // convert pixels to percentage
   const pixelsToPercentage =
     (pixelScrolled / (totalHeightScrollable - viewportHeight)) * 120;
   // set the width of the fluid element.
-  progressBar.style.transform = "rotate(" + (20+Math.round(pixelsToPercentage)) + "deg)";
+  progressBar.style.transform = "rotate(" + (30+Math.round(pixelsToPercentage)) + "deg)";
 }
 
 
 
 let chevron = document.querySelector('#scrollEtat a')
 let demiCerlce = document.querySelector('.demiCerlce')
+let fill = document.querySelector('.fill')
+let arc = document.querySelector('.arc')
+
+demiCerlce.style.background = 'transparent'
+fill.style.background = 'transparent'
+arc.style.background ='transparent'
 
 
-demiCerlce.style.background = '#F9F9F9'
 function coucou() {
-  console.log('coucou')
   if (window.scrollY > 50) {
     chevron.style.top='80px'
     demiCerlce.style.background ='#fff'  
+    fill.style.background ='#F9F9F9'  
+    arc.style.background ='#ACDBE2'  
   }else{
     chevron.style.top='0px'
-    demiCerlce.style.background = '#F9F9F9'
+    demiCerlce.style.background = 'transparent'
+    fill.style.background = 'transparent'
+    arc.style.background ='transparent'
   }
 }
 

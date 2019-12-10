@@ -9,4 +9,4 @@
         <p id="mentionLeg"><a href="mentionLegal.php">Mentions legales </a> ©Cimaise 2019</p>
     </div>
 </footer>
-<script src="asset/js/script.js"></script>
+<script type="text/javascript" src="asset/js/script.js"></script>

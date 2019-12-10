@@ -13,8 +13,10 @@
         <section id="capsuleCestQuoi" class="col-8" >
             <div>
                 <h2>Capsule c'est quoi ?</h2>
-                <i class="fas fa-play-circle"></i>
-                <img src="asset/img/formuleCapsule.png" alt="forme">
+                <div class="bloup"> 
+                    <img src="asset/img/bg/capsule.jpg" alt=""  id ="imgVideo"> 
+                    <i class="fas fa-play-circle"></i>
+                </div>
 
                 <h3>Un temps pour respirer :</h3>
 
