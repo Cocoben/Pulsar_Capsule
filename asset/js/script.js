@@ -22,49 +22,6 @@ buttonBurger.addEventListener('click', () => {
 
 
 
-
-// INPUT RANGE
-
-let inputRange = document.querySelector('input[type="range"]')
-let sectionBlockUne = document.querySelector('#sectionBlockUne')
-let divSectionBlockUne = document.querySelector('#sectionBlockUne > div')
-
-
-
-inputRange.addEventListener("input", function () {
-    sectionBlockUne.scrollLeft = tailleScroll * inputRange.value / 50
-    // console.log(inputRange.value)
-    // console.log(sectionBlockUne.scrollLeft)
-    // console.log(tailleScroll)
-})
-
-sectionBlockUne.addEventListener('scroll', () => {
-    inputRange.value = 50 * sectionBlockUne.scrollLeft / tailleScroll
-    // console.log(inputRange.value)
-    // console.log(sectionBlockUne.scrollLeft)
-    // console.log(tailleScroll)
-})
-
-// sectionBlockUne.addEventListener('wheel', function(e) {
-
-//     if (e.deltaY > 0) sectionBlockUne.scrollLeft += 100;
-//     else sectionBlockUne.scrollLeft -= 100;
-//   });
-
-let tailleScroll = divSectionBlockUne.offsetWidth - sectionBlockUne.offsetWidth
-
-if(divSectionBlockUne.offsetWidth < sectionBlockUne.offsetWidth){
-    inputRange.style.visibility ='hidden';
-}else{
-    inputRange.style.visibility ='visible';
-}
-
-console.log(divSectionBlockUne.offsetWidth - sectionBlockUne.offsetWidth)
-
-
-
-
-
 // LECTEUR VIDEO
 
 
@@ -132,7 +89,67 @@ blockVideo.forEach((node) => {
 })
 
 
-modalClose.addEventListener('click', () => {
-    modalVideo.style.visibility = 'hidden'
-    stopVideo()
-})
+if(modalClose != null){
+    modalClose.addEventListener('click', () => {
+        modalVideo.style.visibility = 'hidden'
+        stopVideo()
+    })
+}
+
+
+
+
+
+
+
+// INPUT RANGE
+
+let inputRangeUne = document.querySelector('#inputRangeUne')
+let sectionBlockUne = document.querySelector('#sectionBlockUne')
+let divSectionBlockUne = document.querySelector('#sectionBlockUne > div')
+let tailleScrollUn
+
+if(inputRangeUne != null){
+    tailleScrollUn = divSectionBlockUne.offsetWidth - sectionBlockUne.offsetWidth
+    inputRangeUne.addEventListener("input", function () {
+        sectionBlockUne.scrollLeft = tailleScrollUn * inputRangeUne.value / 50
+    })
+    sectionBlockUne.addEventListener('scroll', () => {
+        inputRangeUne.value = 50 * sectionBlockUne.scrollLeft / tailleScrollUn
+    })
+    if(divSectionBlockUne.offsetWidth < sectionBlockUne.offsetWidth){
+        inputRangeUne.style.visibility ='hidden';
+    }else{
+        inputRangeUne.style.visibility ='visible';
+    }
+}
+
+let inputRangeDeux = document.querySelector('#inputRangeDeux')
+let sectionBlockDeux = document.querySelector('#sectionBlockDeux')
+let divSectionBlockDeux = document.querySelector('#sectionBlockDeux > div')
+let tailleScrollDeux
+
+
+if(inputRangeDeux != null){
+    tailleScrollDeux = divSectionBlockDeux.offsetWidth - sectionBlockDeux.offsetWidth
+    inputRangeDeux.addEventListener("input", function () {
+        sectionBlockDeux.scrollLeft = tailleScrollDeux * inputRangeDeux.value / 50
+    })
+    sectionBlockDeux.addEventListener('scroll', () => {
+        inputRangeDeux.value = 50 * sectionBlockDeux.scrollLeft / tailleScrollDeux
+    })
+    if(divSectionBlockDeux.offsetWidth < sectionBlockDeux.offsetWidth){
+        inputRangeDeux.style.visibility ='hidden';
+    }else{
+        inputRangeDeux.style.visibility ='visible';
+    }
+}
+
+
+
+
+// sectionBlockUne.addEventListener('wheel', function(e) {
+
+//     if (e.deltaY > 0) sectionBlockUne.scrollLeft += 100;
+//     else sectionBlockUne.scrollLeft -= 100;
+//   });

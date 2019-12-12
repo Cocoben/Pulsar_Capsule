@@ -1,6 +1,6 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSJNWW6"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLPNQ7R"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -36,10 +36,8 @@
     <nav>
       <div class="container">
         <ul>
-          <p>Menu</p>
-          <li><a href="index.php">Accueil</a></li>
-          <li><a href="articlesInterviews.php">Articles & interviews</a></li>
-          <li><a href="capsule.php">Capsule, C'est quoi ?</a></li>
+          <li><a href="articlesInterviews.php">Interviews & articles</a></li>
+          <li><a href="capsule.php">Capsule, c'est quoi ?</a></li>
           <li><a href="unMot.php">Un mot aux enseignants</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>

@@ -67,8 +67,8 @@ if(isset($_POST['envoie']))
 include ('asset/inc/head.inc.php');
 ?>
 
-        <title>Contact</title>
-        <meta name="description" content="Lorem" />
+        <title>Et si on discutait ?</title>
+        <meta name="description" content="Contact de l’association pour des informations concernant Caspule" />
 </head>
 
 <!-- Ajout de la Navigation/Header -->

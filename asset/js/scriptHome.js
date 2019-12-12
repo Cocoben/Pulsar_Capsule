@@ -86,3 +86,26 @@ window.addEventListener('scroll', ()=>{
   coucou()
 })
 
+
+let scrollHome = document.querySelector('#scrollHome')
+
+scrollHome.addEventListener('click',()=>{
+  event.preventDefault();
+  window.scrollTo(0, window.innerHeight); 
+})
+
+
+
+//Cookie
+
+let btnCookie = document.querySelectorAll('#bandeauCookie .btn')
+let cookie = document.querySelector('#bandeauCookie')
+
+
+
+btnCookie.forEach((node) => {
+  node.addEventListener('click', () => {
+      event.preventDefault();
+      cookie.style.display='none'
+  })
+})
